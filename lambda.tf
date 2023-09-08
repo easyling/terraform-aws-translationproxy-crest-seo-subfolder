@@ -35,7 +35,7 @@ resource "aws_lambda_function" "prerender_headers" {
 
   source_code_hash = data.archive_file.prerender_headers.output_base64sha256
 
-  runtime = "nodejs14.x"
+  runtime = "nodejs18.x"
   handler = "prerender-headers.handler"
   publish = true
 
@@ -52,7 +52,7 @@ resource "aws_lambda_function" "prerender_redirect" {
 
   source_code_hash = data.archive_file.redirect_to_prerender.output_base64sha256
 
-  runtime = "nodejs14.x"
+  runtime = "nodejs18.x"
   handler = "redirect.handler"
   publish = true
 

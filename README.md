@@ -100,4 +100,5 @@ output "validation_record" {
 
 ## Prerequisites
 - AWS provider version 5.14.0 or newer.
-- Relevant files (e.g., `prerender-headers.js` and `redirect.js`) should be present in the module directory.
+- Language information from the LSP (Project code, locales, etc.).
+- Desired prefix for each language.

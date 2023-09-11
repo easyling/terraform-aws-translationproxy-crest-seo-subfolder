@@ -60,6 +60,8 @@ This Terraform module enables the deployment and management of a Translation Pro
 
 ## Usage
 
+Declare the module in your Terraform configuration, passing variables as necessary. 
+
 ```hcl
 # Configure the AWS Provider
 provider "aws" {
